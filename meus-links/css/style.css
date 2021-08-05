@@ -1,0 +1,223 @@
+/** Poppins **/
+@font-face {
+    font-family: "Poppins Regular";
+    src: url("../fonts/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family: "Poppins Medium";
+    src: url("../fonts/Poppins/Poppins-Medium.ttf");
+}
+/** Futura **/
+@font-face {
+    font-family: Futura;
+    src: url("../fonts/Futura/Futura.ttf");
+}
+
+:root{
+    --cor_paleta00: #FCFDFF;
+    --cor_paleta01: #8F95A5;
+    --cor_paleta02: #222838;
+    --cor_paleta03: #111C38;
+
+    --font_01: "Poppins Regular";
+    --font_02: "Poppins Medium";
+    --font_03: Futura;
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--cor_paleta00);
+}
+
+.content-user{
+    flex-direction: column;
+    margin: 0px auto;
+    display: flex;
+    max-width: 1024px;
+    min-width: 280px;
+    width: 100%;
+    padding: 68px 10px 0px 10px;
+}
+
+.user{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.user .circle-user{
+    width: 105px;
+    height: 105px;
+    border: 8px solid #2228381e;
+    border-radius: 150px;
+    box-sizing: content-box;
+    z-index: 1;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.253);
+}
+
+.user .img-user{
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    transform: translate(-1px, -1px);
+    background-image: url("../assets/nalisson.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 150px;
+    box-shadow: inset 0px 6px 4px 0px rgba(0, 0, 0, 0.253);
+}
+.infor{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.infor > h1{
+    font-family: var(--font_02);
+    font-size: 28px;
+    color: var(--cor_paleta03);
+}
+
+.infor > p{
+    margin-top: -4px;
+    font-family: var(--font_01);
+    font-size: 16px;
+    color: var(--cor_paleta01);
+}
+
+.infor > p::after{
+    content: "";
+    width: 110px;
+    height: 2px;
+    background-color: #2228380c;
+    display: block;
+    margin: 0px auto;
+    position: relative;
+    top: 11px;
+}
+
+/** Links **/
+.content-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 38px;
+}
+.contacts{
+    display: flex;
+    flex-direction: row;
+    width: 285px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contacts a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts a div{
+    border-radius: 10px;
+    background-color: var(--cor_paleta02);
+    cursor: pointer;
+    box-shadow: 2px 4px 4px 0px #22283852;
+}
+
+.contacts a:first-of-type div{
+    width: 280px;
+    height: 63px;
+    border-radius: 10px;
+    margin-right: 0px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contacts a:first-of-type div img{
+    width: 21.6px;
+    height: 21.61px; 
+}
+
+.contacts a:first-of-type div span{
+    margin-left: 4px;
+    font-family: var(--font_03);
+    font-size: 18px;
+    color: #fff;
+}
+
+.contacts a:not(:first-of-type) div{
+    display: flex;
+    width: 85px;
+    height: 53px;
+    justify-items: center;
+    justify-content: center;
+}
+
+.contacts a:not(:first-of-type) div img{
+    width: 25px;
+    height: auto;
+}
+
+.contacts a:not(:last-of-type) div{
+    margin-right: 13px;
+}
+
+.contacts a div:hover{
+    background-color: #222838f5;
+    transform: translateY(-5px);
+    transition: ease-in 0.15s;
+    box-shadow: 2px 9px 4px 0px #22283852;
+}
+
+
+.social-medias{
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 280px;
+    margin: 42px auto;
+}
+
+.social-medias img{
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+    margin: 0px 16px;
+}
+
+.social-medias span{
+    width: 2px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #222838;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding-top: 4px;
+    margin-bottom: 42px;
+}
+
+footer p{
+    font-family: var(--font_01);
+    font-size: 14px;
+    color: #000;
+}
+
+footer p span{
+    font-family: var(--font_02);
+    font-size: 16px;
+    color: var(--cor_paleta03);
+}
+
