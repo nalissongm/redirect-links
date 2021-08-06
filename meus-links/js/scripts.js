@@ -14,7 +14,7 @@ $(window).on('load',function(){
         
         Lwhatsapp(){
             var phone = "+558881896397";
-            var msg = "Olá! Tudo bem?";
+            var msg = "Oi! Quero começar a mudar a forma que me encontram na internet!";
 
             var whatsapp = $('#whatsapp');
             whatsapp.click(function(){
