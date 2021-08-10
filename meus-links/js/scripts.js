@@ -19,7 +19,7 @@ $(window).on('load',function(){
             var whatsapp = $('#whatsapp');
             whatsapp.click(function(){
                 let msg_encode = encodeURI(msg);
-                location.href = "https://api.whatsapp.com/send?phone="+phone+"&text="+msg_encode;
+                location.href = "https://web.whatsapp.com/send?phone="+phone+"&text="+msg_encode;
             })
         }
 
